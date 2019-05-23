@@ -31,7 +31,7 @@ jobs:
       - docker build -t powershell .
       - docker images
       - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
-      - docker tag weather ${DOCKER_USERNAME}/powershell
+      - docker tag powershell ${DOCKER_USERNAME}/powershell
       - docker push ${DOCKER_USERNAME}/powershell
       - docker logout
 
