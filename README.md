@@ -2,6 +2,10 @@
 
 Powershell version: 6.2.1
 
+#### Tests status
+
+[![Build Status](https://travis-ci.org/pawelpiwosz/docker-powershell.svg?branch=master)](https://travis-ci.org/pawelpiwosz/docker-powershell)
+
 ### Synopsis
 
 If you have this strange feeling to answer for one question: "How it is to

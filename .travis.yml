@@ -23,7 +23,7 @@ jobs:
   - stage: Build test
     script:
       - echo 'Build container.'
-      - docker built -t powershell .
+      - docker build -t powershell .
 
   - stage: Push container
     script:
