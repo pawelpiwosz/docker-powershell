@@ -5,6 +5,9 @@ Powershell version: 6.2.1
 #### Tests status
 
 [![Build Status](https://travis-ci.org/pawelpiwosz/docker-powershell.svg?branch=master)](https://travis-ci.org/pawelpiwosz/docker-powershell)
+[![](https://images.microbadger.com/badges/image/almerhor/powershell.svg)](https://microbadger.com/images/almerhor/powershell "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/almerhor/powershell.svg)](https://microbadger.com/images/almerhor/powershell "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/commit/almerhor/powershell.svg)](https://microbadger.com/images/almerhor/powershell "Get your own commit badge on microbadger.com")
 
 ### Synopsis
 
