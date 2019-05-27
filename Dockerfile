@@ -16,6 +16,21 @@ FROM alpine:latest
 ARG PS_VER=6.2.1
 ARG INSTALL_PATH=/opt/microsoft/powershell/${PS_VER}
 
+LABEL maintainer="Pawel Piwosz <devops@pawelpiwosz.net>"
+
+# For Travis build
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VER
+
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.vcs-url="https://github.com/pawelpiwosz/docker-awscli"
+LABEL org.label-schema.name="docker-awscli"
+LABEL org.label-schema.description="CLI for AWS in Docker container"
+LABEL org.label-schema.version=$VER
+
 ENV INSTALL_PATH=${INSTALL_PATH}
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 ENV LC_ALL=en_US.UTF-8
@@ -49,4 +64,3 @@ RUN pwsh -NoLogo -NoProfile -Command " \
     }"
 
 CMD ["pwsh"]
-
